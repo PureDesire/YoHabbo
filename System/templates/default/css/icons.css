@@ -1,0 +1,70 @@
+
+li.icons.home {
+
+     background-image: url("../img/icons/home-blue.png");
+     background-size: 24px 24px;
+     min-width:20px;
+     height: 24px;
+     background-repeat:no-repeat;
+
+ }
+li.icons.home:hover {
+
+    background-image: url("../img/icons/home-grey.png");
+    min-width:20px;
+    height: 24px;
+}
+
+li.icons.comm {
+
+    background-image: url("../img/icons/comm-blue.png");
+    background-size: 24px 24px;
+    min-width:20px;
+    height: 24px;
+    background-repeat:no-repeat;
+
+}
+li.icons.comm:hover {
+    background-image: url("../img/icons/comm-grey.png");
+    min-width:20px;
+    height: 24px;
+}
+
+li.icons.shop {
+    background-image: url("../img/icons/shop-blue.png");
+    background-size: 24px 24px;
+    min-width:20px;
+    height: 24px;
+    background-repeat:no-repeat;
+
+}
+li.icons.shop:hover {
+    background-image: url("../img/icons/shop-grey.png");
+    min-width:20px;
+    height: 24px;
+}
+
+li.icons.logout {
+    background-image: url("../img/icons/logout-red.png");
+    background-size: 24px 24px;
+    min-width:20px;
+    height: 24px;
+    background-repeat:no-repeat;
+
+}
+li.icons.logout:hover {
+    background-image: url("../img/icons/logout-grey.png");
+    min-width:20px;
+    height: 24px;
+}
+
+.icons.isOnline {
+    position:absolute;
+    margin-top: -4rem;
+    margin-left: 11.5rem;
+    background-image:url("../img/icons/user-online-check.png");
+    min-width: 14px;
+    max-width: 14px;
+    max-height: 16px;
+    min-height: 16px;
+}

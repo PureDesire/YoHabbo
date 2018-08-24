@@ -1,0 +1,297 @@
+/**
+*
+* @author Design and Coded by Zonaxor [ github.com/zonaxor ].
+* @package Habbo Layout #1
+*
+**/
+
+:root {
+	--defaultFont: "Ubuntu", "Lucida Grande", Helvetica, Arial, sans-serif;
+	--defaultBgColor: #020202;
+	--defaultBg: var(--defaultBgColor) url('../images/bg_right.png'), url('../images/bg_left.png') no-repeat right bottom;
+	--defaultBgL: var(--defaultBgLColor) url('../images/bg_left.png') no-repeat left bottom;
+	--habboLogo: url('../images/logo.png') no-repeat;
+	--habboLogo_width: 189px;
+	--habboLogo_height: 67px;
+	--columnSize: 50%;
+	/*
+	* For align column to center replace the word none for auto.
+	*/
+	--columnAlign: none;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html,body {
+	background: var(--defaultBg), var(--defaultBgL);
+	height: 100%;
+	font: 14px var(--defaultFont);
+}
+
+
+.left {float: left;}
+.right {float: right;}
+
+main {
+	width: 90%;
+	overflow: hidden;
+	padding: 1em;
+	margin: auto auto;
+}
+main .column {
+	width: var(--columnSize);
+	margin: var(--columnAlign);
+}
+main .column #header {margin-top: 3em;width:100%;height:100%;display:block;overflow:hidden;}
+main .column #header #logo {
+	background: var(--habboLogo);
+	width: var(--habboLogo_width);
+	height: var(--habboLogo_height);
+	text-decoration: none;
+	cursor: pointer;
+	float: left;
+}
+
+main .column #bgl {
+    background-image: url("http://localhost/cmss/assets/images/bg_left.png");
+	width: 90%;
+	overflow: hidden;
+	padding: 1em;
+	margin: auto auto;
+	position: fixed;
+	z-index: -1;
+}
+	
+main .column #header #infoHotel {
+	float: right;
+	height: 67px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+main .column #header #infoHotel #sep {
+	width: 1px;
+	height: 67px;
+	background: rgba( 255, 255, 255, .1 );
+	-webkit-box-shadow: -1px 0 0 0 #000000;
+	box-shadow: -1px 0 0 0 #000000;
+	float: left;
+}
+main .column #header #infoHotel span {
+	color: #ffffff;
+	font: 12px var(--defaultFont);
+	padding: 26px 10px;
+	float: left;
+	text-align: right;
+}
+main .column #header #infoHotel span:last-child {padding: 26px 0px 26px 10px;}
+main .column form {width:100%;overflow:hidden;display:block;margin-top:2em;}
+main .column form #login__input {
+	background: #111111;
+	width: calc(50% - 2px);
+	padding: 10px;
+	font: 12px var(--defaultFont);
+	font-weight: 500;
+	color: #727272;
+	border: 0;
+	outline: 0;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 3px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+main .column form #login__input:focus {
+	background: #ffffff;
+	color: #111111;
+	-webkit-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+main .column form .fullInput {width: 100% !important;display: block;}
+main .column form #login__select {
+	background: #111111;
+	width: calc(50% - 2px);
+	padding: 10px;
+	font: 12px var(--defaultFont);
+	font-weight: 500;
+	color: #727272;
+	border: 0;
+	outline: 0;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 3px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+main .column form #login__select:focus {
+	background: #ffffff;
+	color: #111111;
+	-webkit-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+main .column form #login__submit {
+	background: #249424;
+	width: 70%;
+	padding: 10px;
+	font: 13px var(--defaultFont);
+	font-weight: 500;
+	color: #ffffff;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	float: left;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	margin-top: 2em;
+}
+main .column form #login__submit:hover {background: #1ca91c;}
+main .column form #btn__register {
+	background: #a91c1c;
+	width: calc(30% - 5px);
+	padding: 10px;
+	font: 13px var(--defaultFont);
+	font-weight: 500;
+	color: #ffffff;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	float: left;
+	margin-left: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	margin-top: 2em;
+}
+main .column form #btn__register:hover {background: #bb2c2c;}
+main .column section {
+	margin-top: 2em;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+main .column section article {
+	background: #090909;
+	padding: 10px;
+	font: 13px var(--defaultFont);
+	border-left: 3px solid #1c91a9;
+}
+main .column section article:hover {background: #111111;}
+main .column section article:not(:first-child) {margin-top: 5px;} 
+main .column section article #title {
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-style: normal;
+	color: #339fb5;
+	font-weight: 500;
+	font: 14px var(--defaultFont);
+	text-decoration: none;
+}
+main .column section article #title:hover {text-decoration: underline;}
+main .column section article #desc {
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-style: normal;
+	color: #949494;
+	font-weight: 500;
+	font: 12px var(--defaultFont);
+}
+main .column footer {
+	background: var(--defaultBgColor);
+	padding: 5px 10px;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin-top: 2em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	text-align: center;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+}
+main .column footer span {
+	color: #313131;
+	font: 12px var(--defaultFont);
+	font-weight: 500;
+}
+main .column footer span a {text-decoration: none;color: #339fb5;}
+@font-face {
+	font-family: "Ubuntu";
+	src: url("../fonts/Ubuntu-Light.ttf") format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url("../fonts/Ubuntu-Medium.ttf") format("truetype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url("../fonts/Ubuntu-Bold.ttf") format("truetype");
+	font-weight: 700;
+}

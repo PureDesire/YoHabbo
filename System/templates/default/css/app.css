@@ -1,0 +1,851 @@
+/* This file was create in php storm by Tracy.Kellogg on 03/13/2018 at 4:54PM CDT */
+
+
+body {
+    background-color: #046691;
+    font-family: 'Ubuntu Mono Condensed', sans-serif;
+    color:white;
+   min-height: 100%;
+}
+
+html {
+    min-height: 100%;
+    overflow-x:hidden;
+}
+
+.lowerContain{
+    background: #124769;
+    width: 100%;
+    height: 100%;
+
+}
+
+.lowerContain.default{
+    background: #124769;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+}
+
+.nav.top {
+    background: rgba(0,18,28,0.5);
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    margin-left: -5.6rem;
+    margin-top: -27rem;
+    z-index: 1000;
+
+}
+
+
+.defaultHL1 {
+    width: 849px;
+    height: 512px;
+    background-image: url("../img/default_hl1.png");
+    margin-left: -7.69rem;
+    margin-top: -5rem;
+}
+
+.nav.content {
+    background:transparent;
+    font-family: 'Ubuntu', sans-serif;
+    color: #f2f2f0;
+    margin-top: 0.4rem;
+    margin-left: 27.7rem;
+}
+
+.special.grid-margin-x{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+
+.nav.content.input {
+    margin-left: 1rem;
+    margin-right: 0.01rem;
+    margin-top: 0.15rem;
+}
+
+.nav.content.input.end {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.nav input[type=text]{
+    font-family: 'Ubuntu', sans-serif;
+    background: #cddadd;
+    border: 0.2rem solid #135b86;
+    border-radius: 5px 5px;
+    height:2.2rem;
+    width: 14rem;
+    margin-left: 1rem;
+    color:grey;
+
+
+}
+
+.nav input[type=text]::placeholder {
+    color:grey;
+}
+
+
+
+.nav input[type=text]:focus{
+    background: white;
+    border: 0.2rem solid #0873a0;
+    border-radius: 5px 5px;
+    height:2.2rem;
+    width: 14rem;
+    box-shadow:none;
+
+}
+.nav input[type=password]::placeholder {
+    color:grey;
+}
+
+.nav input[type=password]{
+    font-family: 'Ubuntu', sans-serif;
+    background: #cddadd;
+    border: 0.2rem solid #135b86;
+    border-radius: 5px 5px;
+    height:2.2rem;
+    width: 14rem;
+    margin-left: 1rem;
+    color:grey;
+
+
+}
+
+.nav input[type=password]:focus{
+    background: white;
+    border: 0.2rem solid #0873a0;
+    border-radius: 5px 5px;
+    height:2.2rem;
+    width: 14rem;
+    box-shadow:none;
+
+}
+
+.login.button {
+    background: #197cb7;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    margin-left: 0.85rem;
+    margin-top: 0.2rem;
+    padding: 0.85rem 1.5rem 0.85rem 1.5rem;
+    border: solid 0.1rem #029cdd;
+    border-radius: 5px 5px;
+    box-shadow: 0rem 0.1rem 0rem 0.1rem rgba(12,40,55, 1);
+}
+
+.login.button:hover {
+    background: #029cdd;
+    border: solid 0.1rem #0bc1f9;
+}
+
+.login.forgotPass {
+    color:white;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 0.85rem;
+    margin-left: -19.2rem;
+    margin-top: 2.8rem;
+}
+
+.register {
+    margin-left: 38rem;
+    margin-top: -16rem;
+    font-size: 1.7rem;
+    text-align:center;
+
+}
+
+.reg.button {
+    background: #0d8045;
+    border: solid 0.1rem #71dd59;
+    border-radius: 5px 5px;
+    width: 25rem;
+    height: 4rem;
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    box-shadow: 0rem 0.1rem 0rem 0.1rem rgba(12,40,55, 0.5);
+
+}
+
+.reg.button:hover {
+    background: #05ad57;
+    border: solid 0.1rem #a9f572;
+}
+
+
+
+.menu.content {
+    margin-top: 1.3rem;
+    margin-left:5rem;
+}
+
+.menuLabel {
+    font-family: "Ubuntu Mono Condensed", sans-serif;
+    font-weight:normal;
+    color: #0d3460;
+    font-size: 1.5rem;
+   margin-top: -1rem;
+    margin-left: 1.5rem;
+    padding-top: 0.0rem;
+    margin-right: 1rem;
+}
+.menuLabel:hover {
+    font-family: "Ubuntu Mono Condensed", sans-serif;
+    color: #aaaaaa;
+    font-size: 1.5rem;
+
+    margin-top: -1rem;
+    margin-left: 1.5rem;
+    padding-top: 0.3rem;
+}
+
+.menu.middle {
+     background: #e8f0f4;
+     position:absolute;
+     margin-left: -6.5rem;
+     width: 100%;
+     height: 4.45rem;
+ }
+
+.menu.middle.me {
+    background: #e8f0f4;
+    position:absolute;
+    margin-left: -5.6rem;
+    margin-top: 5rem;
+    width: 100%;
+    height: 4.45rem;
+}
+.menu.middle.staff {
+    background: #e8f0f4;
+    position:absolute;
+    margin-left: -5.6rem;
+    margin-top: 5rem;
+    width: 100%;
+    height: 4.45rem;
+}
+
+.menu.sub {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    position:relative;
+    margin-left: 0;
+    margin-top:0;
+    background: #00212c;
+    width: 100%;
+    height: 3rem;
+
+
+
+}
+
+.sub.content {
+    margin-left: 5rem;
+    padding:1rem;
+    text-align:center;
+}
+
+.subMenu{
+    list-style:none;
+    display:inline;
+}
+
+li.sub.item{
+    list-style:none;
+    display:inline;
+    color: white;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+
+
+
+li.sub.item:not(:last-child){
+    border-right: 1px solid #35627f;
+}
+li.sub.item:first-child{
+    padding-left: 0;
+}
+
+ul li a.subLink {
+  all:unset;
+    text-decoration:none;
+    background:none;
+    cursor: pointer;
+}
+
+ul li a.subLink.viewing {
+    text-decoration:none;
+    color:#35627f;
+}
+ul li a.subLink:hover {
+
+    text-decoration:none;
+    background:none;
+    color:#35627f;
+}
+
+
+
+.menu.logo {
+    margin-left: -.5rem;
+    margin-top: -6.0rem;
+    width: 300px;
+    height: 100px;
+    background-image:url("../img/logo.png");
+    background-repeat: no-repeat;
+
+}
+.menu.logo.me {
+    margin-left:1.5rem;
+    margin-top: -1rem;
+    width: 300px;
+    height: 100px;
+    background-image:url("../img/logo.png");
+    background-repeat: no-repeat;
+}
+.menu.logo.staff {
+    margin-left:1.5rem;
+    margin-top: -1rem;
+    width: 300px;
+    height: 100px;
+    background-image:url("../img/logo.png");
+    background-repeat: no-repeat;
+}
+
+
+.registration {
+    margin-top: -25rem;
+}
+
+.callout.error {
+    position: absolute;
+    top: 0;
+    left: 28rem;
+    z-index: 1000;
+    background: rgba(157,27,27, 0.85);
+    color:white;
+    width: 30rem;
+    height: 8rem;
+    border: solid 0.2rem #0a0a0a;
+    border-top: none;
+    border-radius: 5px 5px;
+    box-shadow: 0rem 0.1rem 0rem 0.1rem rgba(12,40,55, 0.5);
+}
+
+
+
+.closeCallout {
+    margin-left: 28rem;
+    margin-top: -10rem;
+}
+
+.closeCallout a{
+    text-decoration: none;
+    color:white;
+}
+
+.generic-box {
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+    background: #09628d;
+    width: 100%;
+    height: 10rem;
+    margin-top: 3rem;
+    border-radius: 5px 5px;
+
+}
+
+.large-3.side-content {
+    margin-top:8rem;
+}
+
+
+/* News Styles */
+
+
+.latestNewsTitle {
+    font-family: 'Ubuntu Mono Condensed', sans-serif;
+    color:White;
+    text-transform: uppercase;
+    margin-top: 8rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+
+
+.boxContent {
+    margin: 0.5rem;
+}
+
+.generic-title {
+    font-family: 'Ubuntu', sans-serif;
+    color:White;
+    background: #0b3c50;
+    width: 100%;
+    height: auto;
+    font-size: 1.1rem;
+    padding:0.5rem;
+    text-align:center;
+    margin-bottom: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.news.promo-box {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color:white;
+    min-width: 759px;
+    min-height: 300px;
+    max-width: 759px;
+    max-height: 300px;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    z-index: -1;
+
+}
+
+.news.image-large {
+    z-index: -1;
+    box-shadow: 0.2rem 0.2rem rgba(0,0,0, 0.5);
+
+}
+
+.news.content-short {
+
+    padding: 1rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 759px;
+    font-size: 1rem;
+    margin-top: -18rem;
+    z-index: 100;
+
+}
+
+p.promo.title {
+    max-width: 25rem;
+    max-height: 5rem;
+    overflow-y: hidden;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+p.promo.date.author {
+    max-width: 25rem;
+    max-height: 2rem;
+    font-size: 1rem;
+    overflow-y:hidden;
+}
+
+p.promo.content-main {
+    max-width: 19rem;
+    max-height: 5rem;
+    font-size: 0.85rem;
+    overflow-y:hidden;
+    text-align:left;
+}
+
+
+/*small news items */
+
+
+.generic-box.news {
+    background:transparent;
+    margin-top: 2rem;
+    max-width: 35rem;
+    max-height: 9.3rem;
+    overflow-y:hidden;
+
+}
+
+.news.image-small {
+    background: blue;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius-bottomleft: 5px;
+    border-radius-topleft: 5px;
+    box-shadow: 2px 2px rgba(0,0,0, 0.5);
+
+}
+
+.news.short-right {
+    margin-top:-7rem;
+    margin-left: 8rem;
+}
+
+p.news.short-title {
+    max-width:20rem;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 1.5rem;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    text-transform:uppercase;
+}
+p.news.short-date_author {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 1rem;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    text-transform: uppercase;
+    margin-top: -1.2rem;
+    color: #9a9791;
+}
+
+p.news.short-content{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    margin-top: -1rem;
+    color: #5acdee;
+    max-height: 5.5rem;
+    max-width: 25rem;
+    overflow-y:hidden;
+}
+/*end*/
+/*end*/
+
+
+.menuLabel.button.enter-button {
+    background: #0d8045;
+    border: 2px solid #3adb76;
+    border-radius: 5px 5px;
+    color:white;
+    margin-left: 31rem;
+}
+
+.counter.users {
+    background: #0a0a0a;
+}
+
+.pageEndMargin {
+    margin-bottom: 5rem;
+}
+
+
+/*Footer styles Start*/
+
+
+.footer.contain {
+    position:absolute;
+    margin-left: -5.6rem;
+    margin-top: 1rem;
+    background: #08182b;
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+}
+.footer.contain.default {
+
+    margin-left: -5.6rem;
+
+}
+
+
+/*END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Stuff taken from habbo */
+.hotel-button{
+    display:inline-block;
+    line-height:1.2;
+    text-align:center;
+    background-color:#ffb900;
+    border-color:#ffea00;
+    color:#000;
+    border-radius:5px 0 0 5px;
+    border-width:2px 1px 2px 2px;
+    border-style:solid;
+    margin-bottom:4px;
+    text-transform:uppercase;
+    box-shadow:none;
+    position:relative;
+    margin-right:20px;
+    margin-left: 30rem;
+    margin-top:-3px;
+    padding:6px 12px 6px 24px;
+    max-height: 2.65rem;
+
+}
+.hotel-button:after,.hotel-button:before{
+    border-style:solid;position:absolute;display:block;content:''
+}
+.hotel-button:hover{
+    background-color:#ffd400;border-color:#fffd70
+}
+.hotel-button:active,.hotel-button:disabled{
+    background-color:#f89400;border-color:#ffce37
+}
+.hotel-button:disabled{opacity:.4}
+.hotel-button:active,.hotel-button:hover{border-bottom-style:solid;border-bottom-width:2px}
+.hotel-button:active{transform:translate(0,2px);filter:drop-shadow(-1px 2px 0 rgba(0, 0, 0, .3));box-shadow:none}
+.hotel-button:before{border-width:21px;top:-2px;border-color:transparent transparent transparent #ffea00;right:-43px}
+.hotel-button:after{border-width:19px;top:0;border-color:transparent transparent transparent #ffb900;right:-38px}
+.hotel-button__text:active,.hotel-button__text:hover,.navigation__link--community:active,.navigation__link--community:hover,.navigation__link--home:active,.navigation__link--home:hover,.navigation__link--playing-habbo:active,.navigation__link--playing-habbo:hover,.navigation__link--shop:active,.navigation__link--shop:hover,.user-menu__name:active,.user-menu__name:hover,.user-menu__toggle:active,.user-menu__toggle:hover{border-bottom-style:solid;border-bottom-width:0}
+.hotel-button:hover:before{border-color:transparent transparent transparent #fffd70}
+.hotel-button:hover:after{border-color:transparent transparent transparent #ffd400}
+.hotel-button:active:before,.hotel-button:disabled:before{border-color:transparent transparent transparent #ffce37}
+.hotel-button:active:after,.hotel-button:disabled:after{border-color:transparent transparent transparent #f89400}
+.hotel-button__text{position:relative;
+    top:-0.3rem;
+    padding-right:27px;text-align:right;line-height:26px}
+.hotel-button__text:before{background-image:url('../img/icons/hotel-button.png');background-size: 1.35rem 1.6rem;width:21px;height:26px;content:'';display:block;margin-top:-13px;position:absolute;top:50%;right:0}
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi),(min-resolution:2dppx)
+{.hotel-button__text:before{background-image:url('../img/icons/hotel-button.png');background-size:494px 475px}
+}
+
+.stats.counter-web {
+     position:absolute;
+     z-index: 1000;
+     min-width: 10.6rem;
+     min-height: 1.65rem;
+     max-height: 1.7rem;
+     margin-left: 48rem;
+     margin-top: 1.3rem;
+     background: rgba(0,0,0,.5);
+     border: 2px solid #262727;
+     border-right: none;
+     border-radius: 5px 5px;
+     box-shadow: 0.2rem 0.2rem rgba(12,40,55, 0.5);
+     pointer-events:none;
+
+ }
+
+.stats.counter-web.default {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1000;
+    min-width: 10.6rem;
+    min-height: 1.65rem;
+    max-height: 1.7rem;
+    margin-left: 71rem;
+    margin-top: 1.3rem;
+    background: rgba(0,0,0,.5);
+    border: 2px solid #262727;
+    border-right: none;
+    border-radius: 5px 5px;
+    box-shadow: 0.2rem 0.2rem rgba(12,40,55, 0.5);
+    pointer-events:none;
+
+}
+
+.stats.counter-web__text {
+
+    margin-top: -2rem;
+    margin-left: 0.5rem;
+    pointer-events:none;
+
+}
+
+.stats.hotel-image {
+    background-image:url("../img/icons/online-hotel.png");
+    width: 29px;
+    height: 28px;
+    margin-left: 8.8rem;
+    margin-top: -1.65rem;
+    pointer-events:none;
+}
+
+.client-ui {
+    z-index:1;
+}
+
+
+/* Registration Specific Styles */
+
+.teaser-img {
+    position:relative;
+    top: 0rem;
+    left: 43rem;
+    background-image: url('../img/teaser_registration.png');
+    min-width: 546px;
+    min-height: 465px;
+    max-width: 546px;
+    max-height: 465px;
+    z-index: 100;
+}
+
+/* END */
+
+/* END */
+
+
+/* Dev stuff */
+
+.client-contain {
+    position:absolute;
+    left:0;
+    top:0;
+    visibility:hidden;
+}
+
+.me-contain {
+    visibility:visible;
+}
+
+.show-me {
+    position:absolute;
+    top: 1rem;
+    left: 0.5rem;
+}
+
+
+/*end*/
+
+/* User Info / Menu Drop Down */
+
+.userBox {
+    position:absolute;
+    min-width: 9.5rem;
+    min-height: 1.65rem;
+    max-height: 1.7rem;
+    margin-left: 61rem;
+    margin-top: 1.3rem;
+    background: #00212c;
+    border: 2px solid #007c91;
+    border-right: none;
+    border-radius: 5px 5px;
+    box-shadow: 0.2rem 0.2rem rgba(12,40,55, 0.5);
+    pointer-events:none;
+    padding: 0.1rem;
+    text-align:center;
+    z-index:1001;
+    text-transform:uppercase;
+
+
+}
+
+.userHeadContain {
+    position:absolute;
+    margin-left: 68rem;
+    margin-top: 0.4rem;
+    height:3.4rem;
+    width: 3.4rem;
+    background: #00212c;
+    border-radius: 50%;
+    border: 2.5px solid #007c91;
+    box-shadow: 0.1rem 0.1rem 0 0 rgba(12,40,55, 0.5);
+    display: inline-block;
+    z-index:1001;
+}
+
+.arrow-down.rotated {
+     transform:rotate(180deg);
+     transition: all 0.2s ease-in;
+ }
+.arrow-down {
+    position:absolute;
+    top:1.9rem;
+    left: 67rem;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    padding-top: 0rem;
+    border-top: 10px solid #fff;
+    z-index: 1001;
+    transition: all 0.2s ease-in;
+}
+
+img.headImg {
+    margin-top:-0.2rem;
+}
+
+
+.user.info.popout {
+    z-index:1000;
+    position:absolute;
+    margin-left: 60rem;
+    margin-top: 0.1rem;
+    background: rgba(0,0,0,0.75);
+    min-width: 13rem;
+    min-height: 15rem;
+    border-radius: 0.3rem 0.3rem;
+    padding: 0.5rem;
+    padding-top: 3.8rem;
+    text-align:left;
+    display:none;
+}
+
+.userbox.popout.nav {
+    list-style:none;
+}
+
+ul.userbox.popout.nav li a {
+    color:white;
+}
+
+/*END*/
+
+
+/*Start Staff page */
+
+.large-9.cell.staffContent {
+    margin-top: 8rem;
+}
+
+
+
+
+/* end */
+
+
+.user.plate.web{
+     background: #0074ad;
+    width: 100%;
+    height: 4rem;
+    margin-top: 0rem;
+    border:2px solid #0086bc;
+
+}
+
+.user.plate.head {
+    height:3.4rem;
+    width: 3.4rem;
+    margin-top: 0.1rem;
+    background: #00212c;
+    border-radius: 50%;
+    border: 2.5px solid #007c91;
+    box-shadow: 0.1rem 0.1rem 0 0 rgba(12,40,55, 0.5);
+    display: inline-block;
+    z-index:1001;
+}
+
+.staffname {
+    text-align:center;
+    font-weight:bold;
+    margin-top: -3rem;
+}
+
+.staffrank {
+    font-style: italic;
+    margin-top: -1rem;
+    text-align:center;
+}
+
+.staffTitle {
+    font-family: 'Ubuntu Mono Condensed', sans-serif;
+    color:White;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
